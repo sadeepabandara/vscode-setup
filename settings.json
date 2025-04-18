@@ -1,0 +1,117 @@
+{
+  "workbench.colorTheme": "Aura Dracula Spirit (Soft)",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontSize": 18,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.autoSave": "afterDelay",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "postcss": "css"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "editor.fontFamily": "'Cascadia Code'",
+  "editor.fontLigatures": "'calt', 'ss01'",
+  "terminal.integrated.defaultProfile.linux": "",
+  "editor.wordWrap": "on",
+  "terminal.integrated.gpuAcceleration": "off",
+  "material-icon-theme.activeIconPack": "react",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+
+    // splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // NICE TO HAVE
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.titleBarStyle": "custom",
+  "github.copilot.advanced": {},
+  "editor.accessibilitySupport": "off",
+  "vscode_vibrancy.opacity": -1,
+  "vscode_vibrancy.theme": "Default Dark",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "console-ninja.featureSet": "Community",
+  "git.openRepositoryInParentFolders": "never",
+  "playwright.reuseBrowser": true,
+  "workbench.colorCustomizations": {
+    "terminal.background": "#00000000"
+  },
+  "workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations"],
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "terminal.integrated.fontSize": 16
+}
